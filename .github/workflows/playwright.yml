@@ -1,4 +1,4 @@
-name:  Playwright pipeline for Playwright tests
+name: Playwright pipeline for Playwright tests
 on:
   push:
     branches: 
