@@ -1,11 +1,12 @@
-name: Playwright Tests
+name: Playwright pipeline for Playwright tests
 on:
   push:
-    branches: [ main, master ]
+    branches: 
+      - '**'
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 jobs:
-  test:
+  Playwright-tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
